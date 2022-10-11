@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* --- HEADER --- */
+.header{
+    background-color: rgba(227, 219, 219, 1);
+}
+.logo{
+    margin-left: 2%;
+    display: flex;
+    font-family: pacifico;
+}
+.logo img{
+    width: 75px;
+}
+.logo a{
+    text-decoration: none;
+}
+.navigation{
+    font-family: quicksand;
+    display: flex;
+    margin-left: 70%;
+}
+.navigation ul{
+    list-style: none;
+}
+.navigation ul li{
+    display: inline;
+}
+/* --- CARRUSEL DE IMG --- */
+.slide{
+    background-color: rgba(201, 213, 181, 1);
+    margin:10%;
+    padding-left: 30%;
+}
+/* --- INTRODUCCION --- */
+.introduction{
+    background-color: rgba(227, 219, 219, 1);
+}
+
+.introduction h1{
+    font-family: pacifico;
+    color: rgba(78, 61, 66, 1);;
+    font-weight: 300;
+    font-size: 200%;
+    margin-left: 35%;
+}
+.left h1{
+    margin-left: 0%;
+}
+.introduction h2{
+    font-family: quicksand;
+    color: rgba(109, 100, 102, 1);
+    font-weight: 400;
+    margin-left: 30%;
+} 
+.information{
+    background-color:rgba(201, 213, 181, 1);
+    display: flex;
+}
+.information div{
+    font-family: quicksand;
+    width: 1000px;
+    margin-left: 10%;
+}
+.information img{
+    width: 300px;
+    margin-left: 2%;
+}
+.story{
+    display: flex;
+    background-color: rgba(201, 213, 181, 1);
+}
+
+.image img{
+    width: 500px;
+    margin-left: 2%;
+
+}
+.paragraph p{
+    font-family: quicksand;
+    width: 1000px;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.knowMore{
+    margin-top: 2%;
+    background-color:rgba(227, 219, 219, 1);
+}
+.knowMore h2{
+    font-family: quicksand;
+    color: rgba(109, 100, 102, 1);
+    font-weight: 400;
+    margin-left: 30%;
+}
+/* --- FOOTER --- */
+.footer{
+    font-family: quicksand;
+    background-color: rgba(227, 219, 219, 1);
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.media h2{
+    font-family: quicksand;
+    color: rgba(78, 61, 66, 1);;
+    font-weight: 300;
+    font-size: 200%;
+    padding-left: 35%;
+    background-color: rgba(227, 219, 219, 1);
+}
+.media ul{
+    list-style: none;
+    margin-left: 25%;
+}
+.media ul li{
+    padding: 10px;
+    display: inline;
+}
+.footer a{
+    margin-left: 80%;
+}
+/* -- TARIFAS -- */
+.list{
+    font-family: quicksand;
+    margin: 1%;
+}
+.list li{
+    margin:1%;
+    margin-left: 5%;
+}
+.calculate{
+    display: flex;
+}
+.form{
+    margin-top: 2%;
+    margin-left: 10%;
+}
+.field{
+    font-family: quicksand;
+    padding:10px;
+}
+/* -- GALERIA --*/
+.gallery{
+    background-color: rgba(201, 213, 181, 1);
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.gallery img{
+    margin: 1%;
+    width: 20%;
+}
+/* -- CONTACTO -- */
+.forms{
+    display: flex;
+}
+.contact{
+    padding-right: 10%;
+    padding-top: 2%;
+}
+.newsletter{
+    background-color: rgba(201, 213, 181, 1);
+    padding:5%;
+}
+.newsletter h2{
+    font-family: quicksand;
+    color: rgba(78, 61, 66, 1);;
+    font-weight: 300;
+    font-size: 200%;
+}
