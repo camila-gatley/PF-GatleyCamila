@@ -6,73 +6,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kitten Mitten Hotel</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
   </head>
   <body>
-    <header id="start" class="header">
-      <div class="logo">
-        <a href="index.html"></a>
-        <img src="./media/image/cat.png" alt="Gato naranja" />
-        <p>Kitten Mitten Hotel</p>
-      </div>
-      <nav class="navigation">
-        <ul>
-          <li><a href="./pages/nosotros.html">Nosotros</a></li>
-          <li><a href="./pages/tarifas.html">Tarifas</a></li>
-          <li><a href="./pages/galeria.html">Galeria</a></li>
-          <li><a href="./pages/contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="slide">
-        <!--No se como poner un slide de imagenes-->
-        <p>aca va carrusel de imagenes</p>
-      </section>
-      <section class="introduction">
-        <h1>Kitten Mitten Hotel</h1>
-        <h2>¡Dale a tus gatos unas vacaciones de lujo!</h2>
-      </section>
-      <section class="information">
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Perspiciatis excepturi commodi tempore ab, temporibus aspernatur
-            voluptatibus in cum asperiores quasi ullam, rerum expedita magnam
-            earum quisquam molestiae, voluptates rem dolorem? Autem explicabo
-            enim odit aut totam laborum deserunt, dolore et, aliquam quidem,
-            dolorem tempora quam ullam? A corporis, minus dolore doloremque
-            reprehenderit sunt ullam eligendi voluptatum dignissimos, iusto
-            facere eos! Assumenda reiciendis quos dicta! Accusamus ad eaque ex
-            vero temporibus perspiciatis numquam praesentium molestias doloribus
-            nesciunt eligendi, eos blanditiis obcaecati ducimus! Quibusdam
-            nostrum quia aliquid earum quas cumque, enim dolor. Officia eligendi
-            esse optio iste voluptate voluptatibus commodi. Aut maxime, quia
-            repudiandae totam consequatur vel, tempora quam nemo iusto ducimus
-            hic dolorem beatae magnam error deleniti culpa officia tempore.
-            Aspernatur. Corporis architecto porro rem, quibusdam illo quo quod
-            ipsam iure praesentium accusantium aut tenetur asperiores! Nobis,
-            natus. Ad delectus quos facere, libero, officiis sapiente,
-            repudiandae adipisci nobis quidem fugiat nostrum.
-          </p>
+    <!-- CONTENEDOR GRID-->
+    <div class="grid-container">
+      <!-- HEADER -->
+      <header id="start" class="header">
+        <nav>
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <a href="./index.html" class="enlace">
+            <img src="./media/image/cat.png" alt="Gato naranja" class="logo"/>
+          </a>
+          <ul class="navigation">
+            <li><a href="./pages/nosotros.html">Nosotros</a></li>
+            <li><a href="./pages/tarifas.html">Tarifas</a></li>
+            <li><a href="./pages/galeria.html">Galeria</a></li>
+            <li><a href="./pages/contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <section></section>
+      </header>
+      <main>
+        <!-- ARRANCA SLIDER -->
+        <div class="slider">
+          <input type="radio" name="slide" id="slide-1" checked>
+          <input type="radio" name="slide" id="slide-2">
+          <input type="radio" name="slide" id="slide-3">
+
+          <div class="slides">
+            <div class="slide slide-1"></div>
+            <div class="slide slide-2"></div>
+            <div class="slide slide-3"></div>
+          </div>
+
+          <div class="arrows arrow-left">
+            <label for="slide-3">
+                <span><i class="fas fa-angle-left"></i></span>
+            </label>
+            <label for="slide-1">
+                <span><i class="fas fa-angle-left"></i></span>
+            </label>
+            <label for="slide-2">
+                <span><i class="fas fa-angle-left"></i></span>
+            </label>
         </div>
-        <div>
-          <img src="./media/image/atun.jpeg" alt="atuncito" />
-          <!-- es mi gato, se llama asi :D -->
+
+        <div class="arrows arrow-right">
+            <label for="slide-2">
+                <span><i class="fas fa-angle-right"></i></span>
+            </label>
+            <label for="slide-3">
+                <span><i class="fas fa-angle-right"></i></span>
+            </label>
+            <label for="slide-1">
+                <span><i class="fas fa-angle-right"></i></span>
+            </label>
         </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="media">
-        <ul>
-          <li>Telefono: +54(223)111-1111</li>
-          <li>Mail: emailsample@gmail.com</li>
-          <li>Facebook: kittenmittenhotel</li>
-          <li>Instagram: kittenmittenhotel</li>
+
+        <div class="dots">
+            <label for="slide-1"></label>
+            <label for="slide-2"></label>
+            <label for="slide-3"></label>
+        </div>
+
+        </div>
+        <!-- TERMINA SLIDER -->
+        <section class="introduction">
+          <h1>Kitten Mitten Hotel</h1>
+          <h2>¡Dale a tus gatos unas vacaciones de lujo!</h2>
+        </section>
+        <section class="information">
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Perspiciatis excepturi commodi tempore ab, temporibus aspernatur
+              voluptatibus in cum asperiores quasi ullam, rerum expedita magnam
+              earum quisquam molestiae, voluptates rem dolorem? Autem explicabo
+              enim odit aut totam laborum deserunt, dolore et, aliquam quidem,
+              dolorem tempora quam ullam? A corporis, minus dolore doloremque
+              reprehenderit sunt ullam eligendi voluptatum dignissimos, iusto
+              facere eos! Assumenda reiciendis quos dicta! Accusamus ad eaque ex
+              vero temporibus perspiciatis numquam praesentium molestias
+              doloribus nesciunt eligendi, eos blanditiis obcaecati ducimus!
+              Quibusdam nostrum quia aliquid earum quas cumque, enim dolor.
+              Officia eligendi esse optio iste voluptate voluptatibus commodi.
+              Aut maxime, quia repudiandae totam consequatur vel, tempora quam
+              nemo iusto ducimus hic dolorem beatae magnam error deleniti culpa
+              officia tempore. Aspernatur. Corporis architecto porro rem,
+              quibusdam illo quo quod ipsam iure praesentium accusantium aut
+              tenetur asperiores! Nobis, natus. Ad delectus quos facere, libero,
+              officiis sapiente, repudiandae adipisci nobis quidem fugiat
+              nostrum.
+            </p>
+          </div>
+          <div class="image">
+            <img src="./media/image/atun.jpeg" alt="atuncito" />
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="media">
+          <a href="https://www.youtube.com/watch?v=xm3YgoEiEDc&t=8s&ab_channel=10Hours"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/watch?v=xm3YgoEiEDc&t=8s&ab_channel=10Hours"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.youtube.com/watch?v=xm3YgoEiEDc&t=8s&ab_channel=10Hours"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <ul class="list-links">
+          <li><a href="#start">Ir al principio de la pagina</a></li>
+          <li><a href="https://www.youtube.com/watch?v=xm3YgoEiEDc&t=8s&ab_channel=10Hours">Terminos y Condiciones</a></li>
         </ul>
-      </div>
-      <div>
-        <a href="#start">Ir al principio de la pagina</a>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

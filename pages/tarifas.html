@@ -6,22 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kitten Mitten Hotel - Tarifas</title>
     <link rel="stylesheet" href="../css/style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
   </head>
   <body>
+    <div class="grid-container">
     <header id="start" class="header">
-      <div class="logo">
-        <img src="../media/image/cat.png" alt="Gato naranja" />
-        <a href="../index.html">Kitten Mitten Hotel</a>
-      </div>
-      <nav class="navigation">
-        <ul>
-          <li><a href="../index.html">Kitten Mitten Hotel</a></li>
+      <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <a href="../index.html" class="enlace">
+          <img src="../media/image/cat.png" alt="Gato naranja" class="logo"/>
+        </a>
+        <ul class="navigation">
           <li><a href="./nosotros.html">Nosotros</a></li>
           <li><a href="./tarifas.html">Tarifas</a></li>
           <li><a href="./galeria.html">Galeria</a></li>
           <li><a href="./contacto.html">Contacto</a></li>
         </ul>
       </nav>
+      <section></section>
     </header>
     <main>
       <section class="introduction left">
@@ -113,16 +118,15 @@
     </main>
     <footer class="footer">
       <div class="media">
-        <ul>
-          <li>Telefono: +54(223)111-1111</li>
-          <li>Mail: emailsample@gmail.com</li>
-          <li>Facebook: kittenmittenhotel</li>
-          <li>Instagram: kittenmittenhotel</li>
-        </ul>
+        <a href="https://www.youtube.com/watch?v=xm3YgoEiEDc&t=8s&ab_channel=10Hours"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/watch?v=xm3YgoEiEDc&t=8s&ab_channel=10Hours"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.youtube.com/watch?v=xm3YgoEiEDc&t=8s&ab_channel=10Hours"><i class="fab fa-whatsapp"></i></a>
       </div>
-      <div>
-        <a href="#start">Ir al principio de la pagina</a>
-      </div>
+      <ul class="list-links">
+        <li><a href="#start">Ir al principio de la pagina</a></li>
+        <li><a href="https://www.youtube.com/watch?v=xm3YgoEiEDc&t=8s&ab_channel=10Hours">Terminos y Condiciones</a></li>
+      </ul>
     </footer>
+  </div>
   </body>
 </html>
