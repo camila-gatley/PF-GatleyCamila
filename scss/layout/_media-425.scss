@@ -1,0 +1,30 @@
+@media (max-width: 425px) {
+    .information{
+        .image img{
+            width: 300px;
+        }
+        
+    } 
+    .introduction{
+        h2{
+            padding-left: 15px;
+            align-items: center;
+        }
+    }
+    .nosotros{
+        .story{
+            display: grid;
+            .image{
+                img{
+                    width: 350px;
+                }
+            }
+        }
+    }
+}
+.container{
+    h2{
+        font-size: medium;
+    }
+    padding: 10px;
+}

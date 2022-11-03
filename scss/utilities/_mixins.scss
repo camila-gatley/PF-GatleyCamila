@@ -1,0 +1,57 @@
+@mixin carac-container ($columns,$rows) {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows, 100px;
+    background: #649173;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #DBD5A4, #649173);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #DBD5A4, #649173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+}
+
+
+@mixin images {
+    .image{
+        img{
+            border-radius: 5%;
+            width: 500px;
+            margin-left: 2%;
+        }
+    }
+}
+
+@mixin title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 50px;
+        h1{
+            font-family: pacifico;
+            width: 100%;
+            font-size: 3em;
+            font-weight: bolder;
+            padding-bottom: 10px ;
+            border-bottom: 3px solid #222;
+            span{
+                font-weight: 100;
+            }
+        }
+}
+
+@mixin paragraph {
+    .paragraph p{
+        font-family: quicksand;
+        width: 1000px;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+}
+@mixin story {
+    .story{
+        display: flex;
+        background-color: rgba(201, 213, 181, 1);
+    }
+}

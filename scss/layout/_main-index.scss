@@ -1,0 +1,150 @@
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    
+    .arrows {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fff;
+        font-size: 60px;
+        transition: 0.4s linear;
+        &:hover{
+            color: #000;
+            text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff;
+        }
+        label {
+            display: none;
+        }
+        
+    }
+    .arrow-left {
+        left: 3%;
+    }
+    .arrow-right {
+        right: 3%;
+    }
+    input:nth-child(1):checked ~ .slides {
+        left: 0;
+    }
+    input:nth-child(2):checked ~ .slides {
+        left: -100%;
+    }
+    input:nth-child(3):checked ~ .slides {
+        left: -200%;
+    }
+    input:nth-child(1):checked ~ .arrows label:nth-child(1),
+    input:nth-child(2):checked ~ .arrows label:nth-child(2),
+    input:nth-child(3):checked ~ .arrows label:nth-child(3) {
+        display: block;
+    }
+    
+    .dots {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        bottom: 15px;
+    }
+    
+    .dots label {
+        display: inline-block;
+        border-radius: 100%;
+        margin: 0 6px;
+        width: 25px;
+        height: 25px;
+        background-color: #fff;
+    }
+    
+    input:nth-child(1):checked ~ .dots label:nth-child(1),
+    input:nth-child(2):checked ~ .dots label:nth-child(2),
+    input:nth-child(3):checked ~ .dots label:nth-child(3) {
+        background-color: #000;
+        border: 2px solid #fff;
+    }
+
+}
+
+.slides{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 100%;
+    transition: 2s ease;
+    
+}
+
+.slide{
+    width: 33.33%;
+    height: 100%;
+    float: left;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.5);
+    }
+}
+.slide-1 {
+    background-image: url(../media/image/tunakai4.jpeg);
+}
+
+.slide-2 {
+    background-image: url(../media/image/tunakai5.jpeg);
+}
+
+.slide-3 {
+    background-image: url(../media/image/tunakai6.jpeg);
+}
+
+.heading{
+    @include title;
+    h2{
+        font-family: quicksand;
+    }
+}
+
+.introduction{
+    h1{
+        font-family: pacifico;
+        color: rgba(78, 61, 66, 1);;
+        font-weight: 300;
+        font-size: 200%;
+        display: flex;
+        justify-content: center;
+    }
+    h2{
+        font-family: quicksand;
+        color: rgba(109, 100, 102, 1);
+        font-weight: 400;
+        display: flex;
+        justify-content: center
+    }
+}
+
+.information{
+    background-color:rgba(201, 213, 181, 1);
+    display: flex;
+    margin: 0 10%;
+    border-radius: 10px;
+    div{
+        font-family: quicksand;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+    }
+    @include images;
+    @include story;
+    @include paragraph;
+}

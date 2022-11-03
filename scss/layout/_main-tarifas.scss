@@ -1,0 +1,34 @@
+.heading{
+    @include title;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(201, 213, 181, 1);
+    border-radius: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    .list{
+        font-family: quicksand;
+        margin-bottom: 20px;
+        .field{
+            margin-top: 10px;
+            padding: 10px;
+        }
+    }
+    .calculate{
+        
+        display: flex;
+        @include paragraph;
+
+        .form{
+            margin-top: 2%;
+            margin-left: 10%;
+            .field{
+                font-family: quicksand;
+                padding:10px;
+            }
+        }
+        
+    }
+}

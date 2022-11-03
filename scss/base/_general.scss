@@ -1,0 +1,23 @@
+.grid-container{
+    @include carac-container(repeat(2,1fr),repeat(4,1fr));
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "main main"
+    "footer footer"
+    ;
+}
+li a:hover{
+    background: #649173c2;
+    transition: .5s;
+    cursor: pointer;
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}

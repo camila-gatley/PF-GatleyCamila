@@ -1,0 +1,21 @@
+@media (max-width: 375px) {
+    .information .image img{
+        width: 200px;
+    }
+    .introduction{
+        h2{
+            padding-left: 40px;
+            align-items: center;
+        }
+    }
+    .nosotros{
+        .story{
+            display: grid;
+            .image{
+                img{
+                    width: 250px;
+                }
+            }
+        }
+    }
+}

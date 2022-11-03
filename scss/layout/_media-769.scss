@@ -1,0 +1,27 @@
+@media only screen and (max-width: 769px) {
+    .container .gallery{
+        flex-direction: column;
+        .col{
+            width: 100%;
+        }
+    }
+    .information .image img{
+        width: 550px;
+    }
+    .nosotros{
+        .story{
+            display: grid;
+            .image{
+                img{
+                    margin:auto;
+                    display: block;
+                }
+            }
+            .paragraph{
+                p{
+                    margin: 10px;
+                }
+            }
+        }
+    }
+}
