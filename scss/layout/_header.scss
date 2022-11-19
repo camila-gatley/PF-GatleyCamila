@@ -23,6 +23,11 @@ nav{
             }
         }
     }
+    a{
+        img{
+            width: 60px;
+        }
+    }
 }
 
 .enlace{
@@ -33,6 +38,7 @@ nav{
     height: 60px;
     border-radius: 5px;
 }
+
 .checkbtn{
     font-size: 30px;
     color: #fff;

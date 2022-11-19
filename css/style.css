@@ -53,6 +53,8 @@ nav {
           background: #649173c2;
           transition: .5s;
           cursor: pointer; }
+  nav a img {
+    width: 60px; }
 
 .enlace {
   position: absolute;
