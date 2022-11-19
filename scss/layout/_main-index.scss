@@ -97,15 +97,15 @@
     }
 }
 .slide-1 {
-    background-image: url(../media/image/tunakai4.jpeg);
+    background-image: url(../media/image/tunakai4.png);
 }
 
 .slide-2 {
-    background-image: url(../media/image/tunakai5.jpeg);
+    background-image: url(../media/image/tunakai5.png);
 }
 
 .slide-3 {
-    background-image: url(../media/image/tunakai6.jpeg);
+    background-image: url(../media/image/tunakai6.png);
 }
 
 .heading{
@@ -147,4 +147,12 @@
     @include images;
     @include story;
     @include paragraph;
+    .paragraph {
+        display: flex;
+        flex-direction: column;
+        p{
+            width: 90%;
+        }
+        
+    }
 }

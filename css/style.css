@@ -17,7 +17,6 @@
   background: -webkit-linear-gradient(to right, #DBD5A4, #649173);
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #DBD5A4, #649173);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   grid-template-areas: "header header" "main main" "main main" "footer footer"; }
 
 li a:hover {
@@ -151,13 +150,13 @@ nav {
     background-color: rgba(0, 0, 0, 0.5); }
 
 .slide-1 {
-  background-image: url(../media/image/tunakai4.jpeg); }
+  background-image: url(../media/image/tunakai4.png); }
 
 .slide-2 {
-  background-image: url(../media/image/tunakai5.jpeg); }
+  background-image: url(../media/image/tunakai5.png); }
 
 .slide-3 {
-  background-image: url(../media/image/tunakai6.jpeg); }
+  background-image: url(../media/image/tunakai6.png); }
 
 .heading {
   display: flex;
@@ -206,7 +205,7 @@ nav {
     align-items: center; }
   .information .image img {
     border-radius: 5%;
-    width: 500px;
+    width: 400px;
     margin-left: 2%; }
   .information .story {
     display: flex;
@@ -216,6 +215,11 @@ nav {
     width: 1000px;
     margin-left: 10%;
     margin-top: 5%; }
+  .information .paragraph {
+    display: flex;
+    flex-direction: column; }
+    .information .paragraph p {
+      width: 90%; }
 
 .nosotros {
   display: flex;
@@ -239,7 +243,7 @@ nav {
         font-weight: 100; }
   .nosotros .image img {
     border-radius: 5%;
-    width: 500px;
+    width: 400px;
     margin-left: 2%; }
   .nosotros .story {
     display: flex;
@@ -390,34 +394,6 @@ nav {
     .heading h1 span {
       font-weight: 100; }
 
-.container-contact {
-  background-color: #c9d5b5;
-  padding-top: 20px;
-  margin-left: 30%;
-  margin-right: 30%;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center; }
-
-fieldset {
-  display: flex;
-  flex-direction: column; }
-
-.form-group {
-  width: 400px;
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: center; }
-
-.contact-btn {
-  display: inline-block;
-  background: #649173;
-  color: #fff;
-  padding: 8px 30px;
-  margin: 30px 0;
-  border-radius: 30px;
-  transition: background 0.5s; }
-
 .footer {
   font-family: quicksand;
   padding: 40px 0; }
@@ -456,6 +432,33 @@ fieldset {
   .footer h2 {
     font-family: quicksand; }
 
+.container-contact {
+  padding-top: 20px;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center; }
+
+fieldset {
+  display: flex;
+  flex-direction: column; }
+
+.form-group {
+  width: 400px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center; }
+
+.contact-btn {
+  display: inline-block;
+  background: #649173;
+  color: #fff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: background 0.5s; }
+
 @media (max-width: 1024px) {
   .information {
     flex-direction: column;
@@ -484,7 +487,7 @@ fieldset {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to right, #dbd5a4c4, #64917396);
+    background: linear-gradient(to right, #dbd5a4e9, #649173d8);
     top: 80px;
     left: -100%;
     text-align: center;
